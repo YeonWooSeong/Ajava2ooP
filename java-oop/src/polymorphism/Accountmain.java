@@ -1,4 +1,4 @@
-package encapsule;
+package polymorphism;
 
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ import java.util.Scanner;
  * 계좌번호
  * 계좌명
  * 비번
- * 잔액
+ * 잔액  string 값 return
  * 으로 통장이 개설되었습니다.
  *
  */
@@ -32,45 +32,13 @@ public class Accountmain {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Accountsub owNo  = new Accountsub();
-	/*	System.out.println("이름입력");
+		System.out.println("이름입력");
 		String name2 = scanner.next();
 		System.out.println("비밀번호 입력");
 		int pW = scanner.nextInt();
 		owNo.setOwnerName(name2);
 		owNo.setPassword(pW);
-		System.out.print(owNo.toString());*/
-		
-		System.out.println("동작선택 : 1.계좌개설 2.입금 3.출금 .4.조회 5.종료");
-		int key = scanner.nextInt();
-		switch (key) {
-		case 1:
-			System.out.println("이름입력");
-			String name2 = scanner.next();
-			System.out.println("비밀번호 입력");
-			int pW = scanner.nextInt();
-			owNo.setOwnerName(name2);
-			owNo.setPassword(pW);
-			System.out.print(owNo.toString());
-			break;
-		case 2:
-			System.out.println("입글할 돈 입력");
-			int inputMoney = scanner.nextInt();
-			owNo.deposit(inputMoney);
-			break;
-		case 3:
-			break;
-		case 4:
-			break;
-		case 5:
-			
-			
-			break;
-
-		default:
-			break;
-		}
-		
-		
+		System.out.print(owNo.toString());
 	}
 	
 }

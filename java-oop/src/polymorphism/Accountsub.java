@@ -1,14 +1,14 @@
-package encapsule;
+package polymorphism;
 
 import java.util.Scanner;
 
 public class Accountsub {
 	
-private int accountNo; //계좌번호
-private String ownerName; // 계좌주민번호
+protected int accountNo; //계좌번호
+protected String ownerName; // 계좌주민번호
 private int password; // 통장 비밀번호
-private int restMoney;   // 잔액
-public static final String BANK_NAME = "한빛뱅크";
+protected int restMoney;   // 잔액
+protected static final String BANK_NAME = "한빛뱅크";
 Scanner scanner = new Scanner(System.in);
 
 public Accountsub() {
