@@ -19,8 +19,7 @@ public class AccountMain {
 		 String name = scanner.next(); 
 		 System.out.println("통장 비밀번호를 입력하세요");
 		 String number = scanner.next();
-		 account.setAccountNo();
-		 account.setOwnerName(name);
+		Account account2 = new Account(name, number);
 		 System.out.println(account.toString());
 		 break; 
 	case 2:System.out.println("잔액은");

@@ -13,6 +13,16 @@ public class Account {
 	private int restMoney; 	  //잔액
 	public static final String BANK_NAME = "한빛뱅크";
 	
+	public Account() {
+		this("", "");
+	}
+	public Account(String name  , String number) {
+		setOwnerName(name);
+		setPasssword(number);
+	
+	}
+	
+	
 	
 	/**
 	 * 생성자를 만드시오.
