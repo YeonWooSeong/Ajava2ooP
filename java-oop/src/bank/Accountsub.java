@@ -4,16 +4,17 @@ import java.util.Scanner;
 
 public class Accountsub {
 
-	private int accountNo; // 계좌번호
-	private String ownerName; // 이름
+	protected int accountNo; // 계좌번호        //  필드선언
+	protected String ownerName; // 이름
 	private int password; // 통장 비밀번호
-	private int restMoney; // 잔액
-	public static final String BANK_NAME = "한빛뱅크";
+	protected int restMoney; // 잔액
+	protected static final String BANK_NAME = "한빛뱅크";
+
 	Scanner scanner = new Scanner(System.in);
 
 	public Accountsub() {
 
-	accountNo = (int) (Math.random() * 999999) + 1000000;
+		accountNo = (int) (Math.random() * 999999) + 1000000;
 
 	}
 
@@ -81,13 +82,8 @@ public class Accountsub {
 	/*
 	 * return"입출금계좌\n"+"["bank name"]"\n"+계좌번호 계좌명 비번 잔액 으로 통장이 개설되었습니다;
 	 */
-}/*//*	// while (true)
-	syso ("동작선택)
-int key = scanner.nextInt();
-switch(key)
-case1 
-service.opem break
-case2 service.deposit();
-case3 service.withdraw(money);
-case service.serch 
-case return*/
+}/*
+	 * //* // while (true) syso ("동작선택) int key = scanner.nextInt(); switch(key)
+	 * case1 service.opem break case2 service.deposit(); case3
+	 * service.withdraw(money); case service.serch case return
+	 */

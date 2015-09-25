@@ -31,7 +31,7 @@ import java.util.Scanner;
 public class Accountmain {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		Accountsub owNo  = new Accountsub();
+		Accountsub owNo  = new Accountsub(2,"홍길동");
 	/*	System.out.println("이름입력");
 		String name2 = scanner.next();
 		System.out.println("비밀번호 입력");
@@ -58,6 +58,8 @@ public class Accountmain {
 			owNo.deposit(inputMoney);
 			break;
 		case 3:
+			String inputMoney = scanner.next();
+			System.out.println(owNo.deposit(inputMoney););
 			break;
 		case 4:
 			break;

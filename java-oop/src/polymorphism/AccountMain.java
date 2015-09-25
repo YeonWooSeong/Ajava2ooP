@@ -28,17 +28,45 @@ import java.util.Scanner;
  * 으로 통장이 개설되었습니다.
  *
  */
-public class Accountmain {
+public class AccountMain {
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		Accountsub owNo  = new Accountsub();
-		System.out.println("이름입력");
-		String name2 = scanner.next();
-		System.out.println("비밀번호 입력");
-		int pW = scanner.nextInt();
-		owNo.setOwnerName(name2);
-		owNo.setPassword(pW);
-		System.out.print(owNo.toString());
-	}
+		
+		//Scanner scan = new Scanner(System.in);
+		//String ps = scan.nextLine();
+		
+		Scanner scan = new Scanner(System.in);
+		Account p1 = new Account(); //통장 정보.
+		
+		System.out.println("이름  : ");
+		String name = scan.next();
+		System.out.println("비번  : ");
+		String password = scan.next();
+		
+		p1.setAccountNo();
+		p1.setOwnerName(name);
+		System.out.println(p1.toString());
+		
+		
+		for( ; ;){
+			System.out.println("1.입금 2. 출금 3. 잔액조회 4. 종료");
+			int key = scan.nextInt();
+			switch(key){
+			case 1:
+				p1.deposit();
+				break;
+			case 2:
+				p1.withdraw();
+				break;
+			case 3:
+				System.out.println(p1.toString());
+				break;
+			case 4:
+				return;
+			}
+		}
+		
 	
+	
+	
+	}
 }

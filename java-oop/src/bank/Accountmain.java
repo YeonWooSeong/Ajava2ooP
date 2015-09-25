@@ -24,10 +24,6 @@ public class Accountmain {
 	
 		switch (key) {
 		case 1:
-			System.out.println("이름입력");
-			String name2 = scanner.next();
-			System.out.println("비밀번호 입력");
-			int pW = scanner.nextInt();
 			service.open();
 			break;
 			
